@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: blueviolet;
+}
+
+/*-------------BODY--------------*/
+body {
+    font-family: "Poppins", serif;
+    position: relative;
+}
+
+/*-------------HEADER--------------*/
+header{
+    background-color: black;
+}
+
+.idioma {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #f0f0f0;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li{
+    margin-right: 20px;
+    margin-left: 0 auto;
+}
+
+header nav ul li img {
+    max-width: 10%;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+/*-------------MAIN---------------*/
+
+.menu-container {
+    width: 80%;
+    overflow-x: auto;
+    white-space: nowrap;
+    background-color: #333;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.menu-imagenes {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.menu-imagenes li {
+    margin: 0 15px;
+}
+
+.menu-imagenes li img {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    display: block;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.hero{
+    text-align: center;
+    color: white;
+    width: 100%;
+    height: 500px;
+    background-image: url("../img/logos/Logo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.hero h2{
+    font-size: 50px;
+}
+
+.hero h2{
+    font-size: 50px;
+}
+
+.historial-juegos h2{
+    text-align: center;
+}
+
+.historial-juegos nav{
+    display: flex;
+}
+
+.historial-juegos nav img{
+    margin-right: 20px;
+    margin-left: 0 auto;
+    max-width: 50%;
+}
+
+.historial-juegos nav ul li{
+    margin-right: 20px;
+    margin-left: 0 auto;
+    max-width: 30%;
+}
+
+.colaboracion h2{
+    text-align: center;
+}
+
+.colaboracion nav{
+    display: flex;
+}
+
+.colaboracion nav img{
+    margin-right: 20px;
+    margin-left: 0 auto;
+    max-width: 50%;
+    transform: scaleX(-1);
+}
+
+
+.colaboracion nav div ul li{
+    margin-right: 20px;
+    margin-left: 0 auto;
+    max-width: 30%;
+}
+
+/*-------------FOOTER---------------*/
+footer nav {
+    display: flex;
+}
+
+footer nav img {
+    margin-right: 20px;
+    margin-left: 0 auto;
+    max-width: 10%;
+}
+
+footer nav div ul{
+    list-style: none;
+    display: flex;
+}
+
+footer nav div ul li img{
+    margin-right: 20px;
+    margin-left: 0 auto;
+    max-width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+}
+
+.lista-pie-pagina {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin: 10px 0;
+}
+
+.lista-pie-pagina h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.lista-pie-pagina a{
+    padding: 10px 0;
+    color: #f2f2f2;
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: bold;
+}

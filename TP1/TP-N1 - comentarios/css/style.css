@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: blueviolet;
+}
+
+/*-------------BODY--------------*/
+
+body {
+    font-family: "Poppins", serif;
+    position: relative;
+}
+
+/*-------------HEADER--------------*/
+header{
+    background-color: black;
+}
+/*
+header h1{
+    color:aliceblue;
+    --tamaño--
+    font-size: 60px;
+    --Permite cambiar el estilo tipográfico de cada etiqueta dentro del proyecto--
+    font-family: ;
+    --Grosor--
+    font-weight: 900px;
+    font-style: ;
+    color: white;
+}
+*/
+
+.idioma {
+    position: absolute;
+    top: 10px; /* 10 píxeles desde la parte superior */
+    right: 10px; /* 10 píxeles desde el borde derecho */
+    background-color: #f0f0f0; /* Fondo para hacerlo más visible */
+    padding: 5px;
+    border-radius: 5px;
+}
+
+header nav ul{
+    list-style: none;
+    display: flex; /* Muestra las opciones en una fila */
+}
+
+header nav ul li{
+    margin-right: 20px;
+    margin-left: 0 auto;     /* Centra la imagen horizontalmente */
+}
+
+header nav ul li img {
+    max-width: 10%;     /* Ajusta la imagen al contenedor, pero no la estira más allá de su tamaño original */
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+/*-------------MAIN---------------*/
+
+/* Contenedor del menú */
+.menu-container {
+    width: 80%; /* Ajusta el tamaño del contenedor */
+    overflow-x: auto; /* Habilita el scroll horizontal */
+    white-space: nowrap; /* Evita que los elementos se envuelvan */
+    background-color: #333; /* Color de fondo del menú */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo de la lista de opciones */
+.menu-imagenes {
+    list-style: none; /* Elimina los puntos de la lista */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Muestra las opciones en una fila */
+}
+
+/* Estilo de cada opción */
+.menu-imagenes li {
+    margin: 0 15px;
+}
+
+/* Estilo de los enlaces */
+.menu-imagenes li img {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    display: block;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.hero{
+    /*Exclusivo para texto. Permite alinearlos*/
+    text-align: center;
+    color: white;
+    width: 100%;
+    height: 500px;
+    background-image: url("../img/logos/Logo.png");
+    /*Permite repetir (o no) una imagen las veces que sea necesarias para llenar el espacio donde quiero ponerla*/
+    background-repeat: no-repeat;
+    /*Permite quitarle el zoom a la imagen. Permite hacer que la imagen ocupe el espacio que se le asigna sin deformarse*/
+    background-size: cover;
+    /*Permite ajustar el foco en relación a la imagen (depende de la imagen)*/
+    background-position: center;
+    /*Permite agregar un efecto PARALAX*/
+    background-attachment: fixed;
+}
+
+.hero h2{
+    font-size: 50px;
+}
+
+.hero h2{
+    font-size: 50px;
+}
+
+.historial-juegos h2{
+    text-align: center;
+}
+
+.historial-juegos nav{
+    display: flex; /* Muestra las opciones en una fila */
+}
+
+.historial-juegos nav img{
+    margin-right: 20px;
+    margin-left: 0 auto;
+    max-width: 50%;     /* Ajusta la imagen al contenedor, pero no la estira más allá de su tamaño original */
+}
+
+.historial-juegos nav ul li{
+    margin-right: 20px;
+    margin-left: 0 auto;
+    max-width: 30%;
+}
+
+.colaboracion h2{
+    text-align: center;
+}
+
+.colaboracion nav{
+    display: flex; /* Muestra las opciones en una fila */
+}
+
+.colaboracion nav img{
+    margin-right: 20px;
+    margin-left: 0 auto;
+    max-width: 50%;     /* Ajusta la imagen al contenedor, pero no la estira más allá de su tamaño original */
+    transform: scaleX(-1); /* Voltea la imagen horizontalmente */
+}
+
+
+.colaboracion nav div ul li{
+    margin-right: 20px;
+    margin-left: 0 auto;
+    max-width: 30%;
+}
+
+/*-------------FOOTER---------------*/
+
+footer nav {
+    display: flex; /* Muestra las opciones en una fila */
+}
+
+footer nav img {
+    margin-right: 20px;
+    margin-left: 0 auto;
+    max-width: 10%;     /* Ajusta la imagen al contenedor, pero no la estira más allá de su tamaño original */
+}
+
+footer nav div ul{
+    list-style: none;
+    display: flex; /* Muestra las opciones en una fila */
+}
+
+footer nav div ul li img{
+    margin-right: 20px;
+    margin-left: 0 auto;     /* Centra la imagen horizontalmente */
+    max-width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*margin: 0 30px;*/
+    font-size: 3rem;
+}
+
+.lista-pie-pagina {
+    display: grid;
+    /*grid-template-columns: repeat(4, 1fr) -> Para que se vea en 4 columnas
+     otra forma de decirlo es grid-template-columns: 1fr 1fr 1fr 1fr*/
+    grid-template-columns: repeat(4, 1fr);
+    /*gap -< es un espaciado interno*/
+    gap: 25px;
+    margin: 10px 0;
+}
+
+.lista-pie-pagina h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.lista-pie-pagina a{
+    padding: 10px 0;
+    color: #f2f2f2;
+    /*text-transform: uppercase; -> Convierte el texto en binario*/
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: bold;
+}
