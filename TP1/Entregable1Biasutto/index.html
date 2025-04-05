@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego del Ahorcado</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="title">Juego del Ahorcado</h1>
+        <div class="word" id="word">_ _ _ _</div>
+        <div class="attempts" id="hangman">Intentos restantes: 10</div>
+        
+        <div class="input-container">
+            <input type="text" id="guessInput" class="guess-input" maxlength="1" placeholder="A" />
+            <button onclick="intento()" class="guess-button">Adivinar</button>
+        </div>
+        
+        <footer>
+            <p>¡Adivina el nombre del animal antes de que se acaben los intentos!</p>
+        </footer>
+    </div>
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+}
+.title {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #007bff;
+}
+.word {
+    font-size: 2rem;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+}
+.attempts {
+    font-size: 1.25rem;
+    color: #e74c3c;
+    margin-bottom: 15px;
+}
+.input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.guess-input {
+    font-size: 1.5rem;
+    padding: 10px;
+    text-align: center;
+    width: 50px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 2px solid #007bff;
+}
+.guess-button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.guess-button:hover {
+    background-color: #218838;
+}
+footer {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #555;
+}
